@@ -1,0 +1,72 @@
+:root{
+    --yellow: hsl(47, 88%, 63%); 
+    --white: hsl(0, 0%, 100%); 
+    --gray-500: hsl(0, 0%, 42%); 
+    --gray-950: hsl(0, 0%, 7%); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background: var(--yellow);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    font-family: "Figtree", serif;
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.7rem; 
+}
+
+h1:hover {
+    color: var(--yellow); 
+    cursor: pointer;
+}
+
+.card {
+    max-width: 384px; 
+    width: 88%; 
+    border: 2px solid black;
+    border-radius: 20px; 
+    padding: 24px;
+    background-color: var(--white); 
+    box-shadow: 8px 8px 0px 0px black;
+    margin-bottom: 50px;
+}
+
+.card-image img {
+    border-radius: 20px; 
+    width: 100%; 
+}
+
+.card-tag {
+    width: fit-content; 
+}
+.card-tag p {
+    font-weight: 800; 
+    background-color: var(--yellow);
+    padding-left: 20px; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;  
+}
+
+.card-author {
+    display: flex; 
+    flex-direction: row;
+}
+
+.card-author p {
+    font-weight: 800;
+    margin-left: 20px; 
+}
+
