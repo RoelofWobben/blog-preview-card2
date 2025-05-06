@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block; 
+    max-width: 100%; 
+}
+
 main {
     background: var(--yellow);
     display: flex; 
@@ -25,7 +30,6 @@ main {
     min-height: 100vh; 
     font-family: "Figtree", sans-serif;
     font-size: 16px; 
-    font-weight: 500;
 }
 
 h1 {
@@ -33,7 +37,12 @@ h1 {
     font-size: 1.7rem; 
 }
 
-h1:hover {
+a {
+    text-decoration:  none;
+    color: var(--gray-950); 
+}
+
+a:hover {
     color: var(--yellow); 
     cursor: pointer;
 }
@@ -41,12 +50,16 @@ h1:hover {
 .card {
     max-width: 384px; 
     width: 88%; 
-    border: 2px solid black;
+    border: 2px solid var(--gray-500); 
     border-radius: 20px; 
     padding: 24px;
     background-color: var(--white); 
-    box-shadow: 8px 8px 0px 0px black;
+    box-shadow: 8px 8px 0px 0px var(--gray-950);
     margin-bottom: 50px;
+}
+
+.card-image {
+    margin-bottom: 1em; 
 }
 
 .card-image img {
@@ -56,12 +69,25 @@ h1:hover {
 
 .card-tag {
     width: fit-content; 
+    margin-bottom: 2em; 
 }
 
 .card-tag p {
     font-weight: 800; 
     background-color: var(--yellow);
     padding: 10px 20px;  
+}
+
+.card-published {
+    margin-bottom: 0.5em; 
+}
+
+.card-header {
+    margin-bottom: 1em; 
+}
+
+.card-content {
+    margin-bottom: 2em; 
 }
 
 .card-author {
